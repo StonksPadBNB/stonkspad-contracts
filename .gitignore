@@ -1,0 +1,13 @@
+# Compiler files
+cache/
+out/
+
+# Deployment broadcast logs are kept out of this repository
+broadcast/
+
+# Dotenv files and keystores
+.env
+.env.*
+!.env.example
+keystore/
+*.keystore
