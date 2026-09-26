@@ -665,6 +665,5 @@ There must be at least 10 minutes between two buys (`Buy interval not elapsed`).
   held wallet, not a multisig. `KEEPER` is only the backend's hot wallet.
 - Stock registrations require real tokenized stock addresses; use a Chainlink stock/USD feed where
   one exists, otherwise one of the TWAP oracle modes (section 3).
-- Before launch: `forge test --fork-url https://bsc-dataseed.bnbchain.org`, the spec-checker
-  (`audit_claude_fable_5_1.md`) and Flap's third-party audit (the process described in the README). Until the audit
-  is complete, the vault appears on flap.sh with an "unverified" warning.
+- Before launch: `forge test --fork-url https://bsc-dataseed.bnbchain.org` and the AI spec-check
+  (`audit_claude_fable_5_1.md`). The vault is built to Flap's public vault specification and its source is verified on BscScan. There is no third-party security audit yet.

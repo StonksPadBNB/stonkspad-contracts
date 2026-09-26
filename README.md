@@ -54,6 +54,8 @@ The legacy v1 generation and the testnet deployments are listed in `docs/DEPLOY.
 
 ## Security
 
+The vault is built to Flap's public vault specification and its source is verified on BscScan. There is no third-party security audit yet.
+
 See `docs/DESIGN.md` for the trust model (keeper limits, spend caps, 24 h claim delay, verifier
 approval, Guardian veto). Please report vulnerabilities privately to the StonksPad team before
 disclosing them.

@@ -169,8 +169,8 @@ constructor(address beacon_, address wbnb_, address v2Router_, address v3Router_
 2. Stores immutables; sets `platformFeeBps = 1000`, `oracleStaleness = 36 hours`.
 
 Code comment (required by the product specification): Flap's recommended commission is 6% for tax ≤ 1% and
-`6 / taxRateBps` above; StonksPad charges a flat 10% of vault revenue and will supply a
-justification at audit.
+`6 / taxRateBps` above; StonksPad charges a flat 10% of vault revenue; the justification is
+documented here.
 
 ### 4.3 `newVault` (IVaultFactory)
 
@@ -466,7 +466,7 @@ Privileged actors: `platformAdmin`, `keeper`, Guardian.
 | `platformTreasury` / `keeper` | platformAdmin/Guardian | redirect platform fee / change operator | only affects platform's own share / operator identity; user shares are untouched. |
 
 Residual risk: a colluding keeper can still front-run its own buy inside the oracle-deviation band
-(≤ 10%) on a bounded amount (≤ 20 BNB per 10 minutes). This is disclosed for the auditor; the
+(≤ 10%) on a bounded amount (≤ 20 BNB per 10 minutes). This is disclosed here; the
 Chainlink floor guarantees the band, and Guardian / platformAdmin retain independent execution
 and veto paths.
 
